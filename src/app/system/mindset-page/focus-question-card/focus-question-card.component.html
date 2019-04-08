@@ -1,0 +1,28 @@
+<mdl-card mdl-shadow="2" >
+  <mdl-card-title>
+    <h2 mdl-card-title-text>Желаемое состояние!</h2>
+  </mdl-card-title>
+  <mdl-card-supporting-text>
+    <mdl-textfield 
+    type="text" 
+    label="{{question}} {{mainAim}} ?" 
+    [(ngModel)]="focusAnswers" 
+    
+    rows="3" maxrows="4"
+    floating-label>
+  </mdl-textfield>
+  </mdl-card-supporting-text>
+  <mdl-card-actions mdl-card-border *ngIf="question; else finish">
+    <button mdl-button mdl-colored mdl-ripple (click)="nextFocusQuest()">ДАЛЕЕ</button>
+  </mdl-card-actions>
+
+  <ng-template #finish>
+    <mdl-card-actions mdl-card-border>
+      <button mdl-button mdl-colored mdl-ripple (click)="showAnswers()">ПОКАЗАТЬ ОТВЕТЫ</button>
+    </mdl-card-actions>
+    </ng-template>
+
+</mdl-card>
+
+
+

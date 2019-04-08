@@ -1,0 +1,18 @@
+<mdl-card mdl-shadow="2">
+  <mdl-card-title>
+    <h2 mdl-card-title-text>Зачем!</h2>
+  </mdl-card-title>
+  <mdl-card-supporting-text>
+    <mdl-textfield 
+    type="text" 
+    label="Зачем надо ?" 
+    [(ngModel)]="whyAnswer" 
+    floating-label>
+  </mdl-textfield>
+  
+  </mdl-card-supporting-text>
+  <mdl-card-actions mdl-card-border>
+    <button mdl-button mdl-colored mdl-ripple (click)="toNextWhy()">ДАЛЕЕ</button>
+    <button mdl-button mdl-colored mdl-ripple (click)="toNextLevel()">СТОП</button>
+  </mdl-card-actions>
+</mdl-card>

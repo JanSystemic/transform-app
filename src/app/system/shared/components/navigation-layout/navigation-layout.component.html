@@ -1,0 +1,29 @@
+<mdl-layout mdl-layout-fixed-header mdl-layout-fixed-drawer> 
+  <mdl-layout-header>
+     <mdl-layout-header-row>
+        <mdl-layout-title>ТРАНСФОРМАТОР</mdl-layout-title>
+        <mdl-layout-spacer></mdl-layout-spacer>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+           <a class="mdl-navigation__link" >СОСТОЯНИЕ</a>
+           <a class="mdl-navigation__link" >ПРОКАСТИНАЦИЯ</a>
+           <a class="mdl-navigation__link" >ДНЕВНИК</a>
+        </nav>
+     </mdl-layout-header-row>
+  </mdl-layout-header>
+  <mdl-layout-drawer>
+     <mdl-layout-title>ТРАНСФОРМАТОР</mdl-layout-title>
+     <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" routerLink = "/mindset/prieview" >СОСТОЯНИЕ</a>
+        <a class="mdl-navigation__link" >ПРОКАСТИНАЦИЯ</a>
+        <a class="mdl-navigation__link" routerLink = "/why-page" >ЗАЧЕМ</a>
+        <a class="mdl-navigation__link" >ДНЕВНИК</a>
+        <a class="mdl-navigation__link" >ИДЕАЛЬНЫЙ ДЕНЬ</a>
+
+     </nav>
+  </mdl-layout-drawer>
+  <mdl-layout-content>
+     <!-- <mindset-page></mindset-page> -->
+     <router-outlet></router-outlet>
+  </mdl-layout-content>
+</mdl-layout>

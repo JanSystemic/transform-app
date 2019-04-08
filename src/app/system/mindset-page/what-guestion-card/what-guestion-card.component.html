@@ -1,0 +1,16 @@
+<mdl-card mdl-shadow="2">
+  <mdl-card-title>
+    <h2 mdl-card-title-text>Что!</h2>
+  </mdl-card-title>
+  <mdl-card-supporting-text>
+      <mdl-textfield 
+        type="text" 
+        label="Что надо сделать?" 
+        [(ngModel)]="whatAnswer" 
+        floating-label>
+      </mdl-textfield>
+          </mdl-card-supporting-text>
+      <mdl-card-actions mdl-card-border>
+    <button mdl-button mdl-colored mdl-ripple (click)="addAnswer()">ДАЛЕЕ</button>
+  </mdl-card-actions>
+</mdl-card>
